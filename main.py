@@ -91,5 +91,5 @@ async def cnn_model(uploaded_files: List[UploadFile] = File(...)) -> JSONRespons
         image_with_results.append(image_with_result)
         for idx, image_with_result in enumerate(image_with_results, start=1):
             print(idx, image_with_result['food_name'])
-    #
+
     return JSONResponse(content=image_with_results)
